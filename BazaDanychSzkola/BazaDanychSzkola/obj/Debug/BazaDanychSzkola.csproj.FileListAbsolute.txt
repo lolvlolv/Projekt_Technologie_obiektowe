@@ -1,0 +1,14 @@
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\lmdb32.dll
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\lmdb64.dll
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\BazaDanychSzkola.exe.config
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\BazaDanychSzkola.exe
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\BazaDanychSzkola.pdb
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\Siaqodb.dll
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\SiaqodbPortable.dll
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\Siaqodb.xml
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\bin\Debug\SiaqodbPortable.xml
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\obj\Debug\BazaDanychSzkola.csproj.AssemblyReference.cache
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\obj\Debug\BazaDanychSzkola.csproj.CoreCompileInputs.cache
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\obj\Debug\BazaDany.417DCC8B.Up2Date
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\obj\Debug\BazaDanychSzkola.exe
+C:\Users\lolvl\source\repos\BazaDanychSzkola\BazaDanychSzkola\obj\Debug\BazaDanychSzkola.pdb
