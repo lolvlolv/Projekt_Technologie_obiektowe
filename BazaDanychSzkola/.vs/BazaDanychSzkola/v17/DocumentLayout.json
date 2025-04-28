@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\",
+  "WorkspaceRootPath": "C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\lolvl\\source\\repos\\bazadanychszkola\\bazadanychszkola\\iniciazliacjabazy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\iniciazliacjabazy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\lolvl\\source\\repos\\bazadanychszkola\\bazadanychszkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\w11pro\\desktop\\projekt_technologie_obiektowe-main\\bazadanychszkola\\bazadanychszkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\lolvl\\source\\repos\\bazadanychszkola\\bazadanychszkola\\services\\uczenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\services\\uczenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\lolvl\\source\\repos\\bazadanychszkola\\bazadanychszkola\\services\\nauczycielservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\services\\nauczycielservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|c:\\users\\lolvl\\source\\repos\\bazadanychszkola\\bazadanychszkola\\modele\\uczen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\modele\\uczen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\bazadanychszkola\\modele\\nauczyciel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A2AD784-66DB-4637-A60C-8A1EB6C32008}|BazaDanychSzkola\\BazaDanychSzkola.csproj|solutionrelative:bazadanychszkola\\modele\\nauczyciel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,65 +22,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Uczen.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Modele\\Uczen.cs",
-              "RelativeDocumentMoniker": "BazaDanychSzkola\\Modele\\Uczen.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Modele\\Uczen.cs",
-              "RelativeToolTip": "BazaDanychSzkola\\Modele\\Uczen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Nauczyciel.cs",
+              "DocumentMoniker": "C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\BazaDanychSzkola\\Modele\\Nauczyciel.cs",
+              "RelativeDocumentMoniker": "BazaDanychSzkola\\Modele\\Nauczyciel.cs",
+              "ToolTip": "C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\BazaDanychSzkola\\Modele\\Nauczyciel.cs",
+              "RelativeToolTip": "BazaDanychSzkola\\Modele\\Nauczyciel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:44:10.404Z",
+              "WhenOpened": "2025-04-28T07:21:31.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IniciazliacjaBazy.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\IniciazliacjaBazy.cs",
-              "RelativeDocumentMoniker": "BazaDanychSzkola\\IniciazliacjaBazy.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\IniciazliacjaBazy.cs",
-              "RelativeToolTip": "BazaDanychSzkola\\IniciazliacjaBazy.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:40:09.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NauczycielService.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Services\\NauczycielService.cs",
-              "RelativeDocumentMoniker": "BazaDanychSzkola\\Services\\NauczycielService.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Services\\NauczycielService.cs",
-              "RelativeToolTip": "BazaDanychSzkola\\Services\\NauczycielService.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAcwG0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T08:13:19.507Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UczenService.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Services\\UczenService.cs",
-              "RelativeDocumentMoniker": "BazaDanychSzkola\\Services\\UczenService.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Services\\UczenService.cs",
-              "RelativeToolTip": "BazaDanychSzkola\\Services\\UczenService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAcwG4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-26T07:32:17.199Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\BazaDanychSzkola\\Program.cs",
               "RelativeDocumentMoniker": "BazaDanychSzkola\\Program.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\BazaDanychSzkola\\BazaDanychSzkola\\Program.cs",
+              "ToolTip": "C:\\Users\\W11Pro\\Desktop\\Projekt_Technologie_obiektowe-main\\BazaDanychSzkola\\BazaDanychSzkola\\Program.cs",
               "RelativeToolTip": "BazaDanychSzkola\\Program.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAcwHcAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-24T14:53:35.738Z",
               "EditorCaption": ""

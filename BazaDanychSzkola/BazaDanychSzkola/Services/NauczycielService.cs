@@ -24,12 +24,37 @@ namespace BazaDanychSzkola.Services
             string imie = Console.ReadLine();
             Console.WriteLine("Podaj nazwisko:");
             string nazwisko = Console.ReadLine();
-            Console.WriteLine("Podaj wiek:");
-            int wiek = int.Parse(Console.ReadLine());
+            int wiek;
+            while (true)
+            {
+                Console.WriteLine("Podaj wiek:");
+                try
+                {
+                    wiek = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch(FormatException)
+                {
+                    Console.WriteLine("Błąd: podano niepoprawny format.");
+                }
+            }
             Console.WriteLine("Podaj nauczany przedmiot:");
             string nauczanyPrzedmiot = Console.ReadLine();
             Console.WriteLine("Podaj numer PESEL:");
-            string pesel = Console.ReadLine();
+            int pesel;
+            while (true)
+            {
+                Console.WriteLine("Podaj wiek:");
+                try
+                {
+                    pesel = int.Parse(Console.ReadLine());
+                    break;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Błąd: podano niepoprawny format.");
+                }
+            }
 
             Nauczyciel nauczyciel = new Nauczyciel()
             {
@@ -79,6 +104,7 @@ namespace BazaDanychSzkola.Services
         }
         public static void EdytujNauczyciela()
         {
+            WyswietlNauczycieli();
             Console.WriteLine("Podaj ID nauczyciela do edycji:");
             string userInput = Console.ReadLine();
             int id = int.Parse(userInput);
@@ -92,34 +118,55 @@ namespace BazaDanychSzkola.Services
             Console.WriteLine($"Pesel: {nauczyciel.Pesel}");
 
             Console.WriteLine("Wybierz pole do edycji.");
+            Console.WriteLine("1. Imie.");
+            Console.WriteLine("2. Nazwisko.");
+            Console.WriteLine("3. Wiek.");
+            Console.WriteLine("4. Przedmiot");
+            Console.WriteLine("5. Numer Pesel");
+            Console.WriteLine("0. Powrót");
+
             string userInput2 = Console.ReadLine();
             int input2 = int.Parse(userInput2);
 
             switch (input2)
             {
                 case 0:
-                    Environment.Exit(0);
-                    break;
+                    return;
                 case 1:
+                    Console.WriteLine($"Wprowadz nowe imię.");
                     string noweImie = Console.ReadLine();
                     nauczyciel.Imie = noweImie;
+                    Console.WriteLine($"Zmieniono imie na {noweImie}");
+
                     break;
                 case 2:
+                    Console.WriteLine($"Wprowadz nowe nazwisko.");
                     string noweNazwisko = Console.ReadLine();
                     nauczyciel.Nazwisko = noweNazwisko;
+                    Console.WriteLine($"Zmieniono nazwisko na {noweNazwisko}");
+
                     break;
                 case 3:
+                    Console.WriteLine($"Wprowadz nowy wiek.");
                     string nowyWiek = Console.ReadLine();
                     int nowyWiek2 = int.Parse(nowyWiek);
                     nauczyciel.Wiek = nowyWiek2;
+                    Console.WriteLine($"Zmieniono wiek na {nowyWiek2}");
+
                     break;
                 case 4:
+                    Console.WriteLine($"Wprowadz nowy przedmiot.");
                     string nowyNauczanyPrzedmiot = Console.ReadLine();
                     nauczyciel.NauczanyPrzedmiot = nowyNauczanyPrzedmiot;
+                    Console.WriteLine($"Zmieniono przedmiot na {nowyNauczanyPrzedmiot}");
                     break;
                 case 5:
+                    Console.WriteLine($"Wprowadz nowy numer pesel.");
                     string nowyPesel = Console.ReadLine();
-                    nauczyciel.Pesel = nowyPesel;
+                    int nowyPesel2 = int.Parse(nowyPesel);
+                    nauczyciel.Pesel = nowyPesel2;
+                    Console.WriteLine($"Zmieniono numer pesel na {nowyPesel2}");
+
                     break;
             }
         }

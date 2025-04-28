@@ -14,6 +14,6 @@ namespace BazaDanychSzkola.Modele
         public string Nazwisko { get; set; }
         public int Wiek { get; set; }
         public string Klasa { get; set; }
-        public string Pesel {  get; set; }
+        public int Pesel {  get; set; }
     }
 }

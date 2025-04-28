@@ -52,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IniciazliacjaBazy.cs" />
+    <Compile Include="Menu\MenuNauczyciel.cs" />
+    <Compile Include="Menu\MenuUczen.cs" />
     <Compile Include="Modele\Nauczyciel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
