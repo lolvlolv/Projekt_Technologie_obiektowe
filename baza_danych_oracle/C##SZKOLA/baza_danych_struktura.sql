@@ -76,39 +76,42 @@ create TYPE ocena_type AS OBJECT (
 )
 /
 
-create table OSOBY of OSOBA_TYPE
+-- Tabele obiektowe
+
+CREATE TABLE UCZNIOWIE OF uczen_type
+(
+  CONSTRAINT uczniowie_pk PRIMARY KEY(id)
+);
 /
 
-create table UCZNIOWIE of UCZEN_TYPE
+CREATE TABLE NAUCZYCIELE OF nauczyciel_type
+(
+  CONSTRAINT nauczyciele_pk PRIMARY KEY(id)
+);
 /
 
-create table NAUCZYCIELE of NAUCZYCIEL_TYPE
+CREATE TABLE PRZEDMIOTY OF przedmiot_type
+(
+  CONSTRAINT przedmioty_pk PRIMARY KEY(przedmiot_id)
+);
 /
 
-create table PRZEDMIOTY of PRZEDMIOT_TYPE
-/
-
-create table OCENY of OCENA_TYPE
+CREATE TABLE OCENY OF ocena_type;
 /
 
 create table KLASY
 (
-    KLASA_ID NUMBER       not null
-        primary key,
+    KLASA_ID NUMBER       not null primary key,
     NAZWA    VARCHAR2(20) not null
 )
 /
 
 create table PLAN_ZAJEC
 (
-    ID_PLANU       NUMBER       not null
-        primary key,
-    ID_KLASY       NUMBER       not null
-        references KLASY,
-    ID_PRZEDMIOTU  NUMBER       not null
-        references PRZEDMIOTY,
-    ID_NAUCZYCIELA NUMBER       not null
-        references NAUCZYCIELE,
+    ID_PLANU       NUMBER       not null  primary key,
+    ID_KLASY       NUMBER       not null references KLASY,
+    ID_PRZEDMIOTU  NUMBER       not null references PRZEDMIOTY,
+    ID_NAUCZYCIELA NUMBER       not null references NAUCZYCIELE,
     DZIEN_TYGODNIA VARCHAR2(15) not null,
     GODZ_START     VARCHAR2(5)  not null,
     GODZ_END       VARCHAR2(5)  not null
@@ -117,8 +120,7 @@ create table PLAN_ZAJEC
 
 create table WYCHOWAWCA_UCZNIA
 (
-    ID_UCZNIA  NUMBER not null
-        primary key,
+    ID_UCZNIA  NUMBER not null primary key,
     WYCHOWAWCA NAUCZYCIEL_TYPE
 )
 /
