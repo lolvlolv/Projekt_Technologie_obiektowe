@@ -76,14 +76,25 @@ create TYPE ocena_type AS OBJECT (
 )
 /
 
-create table UCZNIOWIE of UCZEN_TYPE
+CREATE TABLE UCZNIOWIE OF uczen_type
+(
+ CONSTRAINT uczniowie_pk PRIMARY KEY(id)
+);
 /
 
-create table NAUCZYCIELE of NAUCZYCIEL_TYPE
+
+CREATE TABLE NAUCZYCIELE OF nauczyciel_type
+(
+ CONSTRAINT nauczyciele_pk PRIMARY KEY(id)
+);
+
+
+CREATE TABLE PRZEDMIOTY OF przedmiot_type
+(
+ CONSTRAINT przedmioty_pk PRIMARY KEY(przedmiot_id)
+);
 /
 
-create table PRZEDMIOTY of PRZEDMIOT_TYPE
-/
 
 create table OCENY of OCENA_TYPE
 /
