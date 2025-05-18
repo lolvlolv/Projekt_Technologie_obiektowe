@@ -76,42 +76,36 @@ create TYPE ocena_type AS OBJECT (
 )
 /
 
--- Tabele obiektowe
-
-CREATE TABLE UCZNIOWIE OF uczen_type
-(
-  CONSTRAINT uczniowie_pk PRIMARY KEY(id)
-);
+create table UCZNIOWIE of UCZEN_TYPE
 /
 
-CREATE TABLE NAUCZYCIELE OF nauczyciel_type
-(
-  CONSTRAINT nauczyciele_pk PRIMARY KEY(id)
-);
+create table NAUCZYCIELE of NAUCZYCIEL_TYPE
 /
 
-CREATE TABLE PRZEDMIOTY OF przedmiot_type
-(
-  CONSTRAINT przedmioty_pk PRIMARY KEY(przedmiot_id)
-);
+create table PRZEDMIOTY of PRZEDMIOT_TYPE
 /
 
-CREATE TABLE OCENY OF ocena_type;
+create table OCENY of OCENA_TYPE
 /
 
 create table KLASY
 (
-    KLASA_ID NUMBER       not null primary key,
+    KLASA_ID NUMBER       not null
+        primary key,
     NAZWA    VARCHAR2(20) not null
 )
 /
 
 create table PLAN_ZAJEC
 (
-    ID_PLANU       NUMBER       not null  primary key,
-    ID_KLASY       NUMBER       not null references KLASY,
-    ID_PRZEDMIOTU  NUMBER       not null references PRZEDMIOTY,
-    ID_NAUCZYCIELA NUMBER       not null references NAUCZYCIELE,
+    ID_PLANU       NUMBER       not null
+        primary key,
+    ID_KLASY       NUMBER       not null
+        references KLASY,
+    ID_PRZEDMIOTU  NUMBER       not null
+        references PRZEDMIOTY,
+    ID_NAUCZYCIELA NUMBER       not null
+        references NAUCZYCIELE,
     DZIEN_TYGODNIA VARCHAR2(15) not null,
     GODZ_START     VARCHAR2(5)  not null,
     GODZ_END       VARCHAR2(5)  not null
@@ -120,8 +114,11 @@ create table PLAN_ZAJEC
 
 create table WYCHOWAWCA_UCZNIA
 (
-    ID_UCZNIA  NUMBER not null primary key,
-    WYCHOWAWCA NAUCZYCIEL_TYPE
+    ID_UCZNIA       NUMBER not null
+        primary key,
+    IMIE_UCZNIA     VARCHAR2(50),
+    NAZWISKO_UCZNIA VARCHAR2(50),
+    WYCHOWAWCA      NAUCZYCIEL_TYPE
 )
 /
 
@@ -139,5 +136,24 @@ FROM
   JOIN klasy k ON p.id_klasy = k.KLASA_ID
   JOIN przedmioty pr ON p.id_przedmiotu = pr.przedmiot_id
   JOIN nauczyciele n ON p.id_nauczyciela = n.id
+/
+
+create PROCEDURE dodaj_wychowawce_ucznia(
+  p_id_ucznia IN NUMBER,
+  p_id_nauczyciela IN NUMBER
+) IS
+  v_uczen uczen_type;
+  v_nauczyciel nauczyciel_type;
+BEGIN
+  -- Pobierz ucznia
+  SELECT VALUE(u) INTO v_uczen FROM uczniowie u WHERE u.id = p_id_ucznia;
+
+  -- Pobierz nauczyciela
+  SELECT VALUE(n) INTO v_nauczyciel FROM nauczyciele n WHERE n.id = p_id_nauczyciela;
+
+  -- Wstaw do tabeli wychowawca_ucznia
+  INSERT INTO wychowawca_ucznia (id_ucznia, imie_ucznia, nazwisko_ucznia, wychowawca)
+  VALUES (p_id_ucznia, v_uczen.imie, v_uczen.nazwisko, v_nauczyciel);
+END;
 /
 
