@@ -1,8 +1,5 @@
-create table KLASY
-(
-    KLASA_ID NUMBER       not null
-        primary key,
-    NAZWA    VARCHAR2(20) not null
-)
+CREATE TABLE klasy (
+    klasa_id NUMBER PRIMARY KEY,
+    nazwa    VARCHAR2(20) NOT NULL
+);
 /
-

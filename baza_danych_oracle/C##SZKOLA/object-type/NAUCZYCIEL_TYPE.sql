@@ -1,2 +1,4 @@
--- The source text is lost (family: ORACLE, kind: object-type, name:NAUCZYCIEL_TYPE, source text length: 73)
-
+CREATE OR REPLACE TYPE nauczyciel_type UNDER osoba_type (
+    przedmiot VARCHAR2(50)
+);
+/
