@@ -1,3 +1,3 @@
-create table OCENY of OCENA_TYPE
+-- Tabela oceny
+CREATE TABLE C##SZKOLA.oceny OF C##SZKOLA.ocena_type;
 /
-
