@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZrYvAPodBYo=",
+  "dgSpecHash": "DD4su+yqhXY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\OracleTest.csproj",
+  "projectFilePath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\OracleTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lolvl\\.nuget\\packages\\oracle.manageddataaccess\\23.8.0\\oracle.manageddataaccess.23.8.0.nupkg.sha512",
     "C:\\Users\\lolvl\\.nuget\\packages\\oracle.manageddataaccess.core\\23.8.0\\oracle.manageddataaccess.core.23.8.0.nupkg.sha512",

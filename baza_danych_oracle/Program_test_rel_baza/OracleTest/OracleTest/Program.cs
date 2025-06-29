@@ -12,6 +12,8 @@ namespace OracleTest
 
             using var connection = new OracleConnection(ConnectionString);
             connection.Open();
+            Console.WriteLine("Połączenie udane!");
+
 
             while (true)
             {
@@ -20,8 +22,8 @@ namespace OracleTest
                     Console.WriteLine("\nWybierz operację:");
                     Console.WriteLine("1 - Dodaj 1000 uczniów");
                     Console.WriteLine("2 - Aktualizuj 1000 uczniów");
-                    Console.WriteLine("3 - Usuń 1000 uczniów");
-                    Console.WriteLine("4 - Wczytaj 1000 uczniów");
+                    Console.WriteLine("3 - Wczytaj 1000 uczniów"); 
+                    Console.WriteLine("4 - Usuń 1000 uczniów");
                     Console.WriteLine("0 - Wyjście");
                     Console.Write("Twój wybór: ");
                     string wybor = Console.ReadLine();
@@ -31,22 +33,22 @@ namespace OracleTest
                         case "1":
                             Console.WriteLine("Dodawanie 1000 uczniów...");
                             var czasDodaj = MeasureTime(() => InsertUczniowie(connection, 1000));
-                            Console.WriteLine($"Dodanie 1000 uczniów zajęło {czasDodaj} ms");
+                            ZapiszWynik("dodaj", czasDodaj);
                             break;
                         case "2":
                             Console.WriteLine("Aktualizacja 1000 uczniów...");
                             var czasAktualizuj = MeasureTime(() => UpdateUczniowie(connection, 1000));
-                            Console.WriteLine($"Aktualizacja 1000 uczniów zajęła {czasAktualizuj} ms");
+                            ZapiszWynik("aktualizuj", czasAktualizuj);
                             break;
                         case "3":
-                            Console.WriteLine("Usuwanie 1000 uczniów wraz z powiązanymi ocenami...");
+                            Console.WriteLine("Usuwanie 1000 uczniów...");
                             var czasUsun = MeasureTime(() => DeleteUczniowie(connection, 1000));
-                            Console.WriteLine($"Usunięcie 1000 uczniów zajęło {czasUsun} ms");
+                            ZapiszWynik("usun", czasUsun);
                             break;
                         case "4":
                             Console.WriteLine("Wczytywanie 1000 uczniów...");
                             var czasWczytaj = MeasureTime(() => SelectUczniowie(connection, 1000));
-                            Console.WriteLine($"Wczytanie 1000 uczniów zajęło {czasWczytaj} ms");
+                            ZapiszWynik("wczytaj", czasWczytaj);
                             break;
                         case "0":
                             Console.WriteLine("Koniec programu.");
@@ -62,6 +64,8 @@ namespace OracleTest
                 }
             }
         }
+
+        
 
         static long MeasureTime(Action action)
         {
@@ -192,6 +196,12 @@ namespace OracleTest
             {
                 Console.WriteLine($"Wczytano rekordów: {licznik}");
             }
+        }
+        static void ZapiszWynik(string operacja, long czas)
+        {
+            string linia = $"baza_relacyjna;{operacja};{czas}";
+            File.AppendAllLines("Wyniki_relacyjna.txt", new[] { linia });
+            Console.WriteLine($"Operacja {operacja} zakończona w {czas} ms");
         }
     }
 }

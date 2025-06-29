@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\",
+  "WorkspaceRootPath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0E6E116-A75A-45E5-861A-299CCA5F1950}|OracleTestRelObj\\OracleTestRelObj.csproj|c:\\users\\lolvl\\source\\repos\\oracletestrelobj\\oracletestrelobj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E0E6E116-A75A-45E5-861A-299CCA5F1950}|OracleTestRelObj\\OracleTestRelObj.csproj|c:\\users\\lolvl\\onedrive\\desktop\\projekt_technologie_obiektowe\\baza_danych_oracle\\program_test_rel-obj_baza\\oracletestrelobj\\oracletestrelobj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0E6E116-A75A-45E5-861A-299CCA5F1950}|OracleTestRelObj\\OracleTestRelObj.csproj|solutionrelative:oracletestrelobj\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -24,9 +24,9 @@
               "DocumentIndex": 1,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAPMUAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2025-06-13T11:10:30.735Z"
@@ -35,11 +35,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\OracleTestRelObj\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\OracleTestRelObj\\Program.cs",
               "RelativeDocumentMoniker": "OracleTestRelObj\\Program.cs",
-              "ToolTip": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\OracleTestRelObj\\Program.cs",
+              "ToolTip": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\OracleTestRelObj\\Program.cs",
               "RelativeToolTip": "OracleTestRelObj\\Program.cs",
-              "ViewState": "AgIAAMQAAAAAAAAAAAAewNAAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAmwBgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T10:06:21.279Z",
               "EditorCaption": ""

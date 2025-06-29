@@ -1,0 +1,10 @@
+baza_obiektowa;dodaj;374
+baza_obiektowa;dodaj;350
+baza_obiektowa;dodaj;334
+baza_obiektowa;aktualizuj;145
+baza_obiektowa;usun;179
+baza_obiektowa;dodaj;340
+baza_obiektowa;dodaj;347
+baza_obiektowa;aktualizuj;150
+baza_obiektowa;wczytaj;6
+baza_obiektowa;usun;195

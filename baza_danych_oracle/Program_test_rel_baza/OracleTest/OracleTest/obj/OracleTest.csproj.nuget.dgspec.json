@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\OracleTest.csproj": {}
+    "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\OracleTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\OracleTest.csproj": {
+    "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\OracleTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\OracleTest.csproj",
+        "projectUniqueName": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\OracleTest.csproj",
         "projectName": "OracleTest",
-        "projectPath": "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\OracleTest.csproj",
+        "projectPath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\OracleTest.csproj",
         "packagesPath": "C:\\Users\\lolvl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lolvl\\source\\repos\\OracleTest\\OracleTest\\obj\\",
+        "outputPath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel_baza\\OracleTest\\OracleTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

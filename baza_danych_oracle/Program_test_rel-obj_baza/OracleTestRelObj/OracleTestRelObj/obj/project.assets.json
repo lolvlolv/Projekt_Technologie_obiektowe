@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\OracleTestRelObj\\OracleTestRelObj.csproj",
+      "projectUniqueName": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\OracleTestRelObj\\OracleTestRelObj.csproj",
       "projectName": "OracleTestRelObj",
-      "projectPath": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\OracleTestRelObj\\OracleTestRelObj.csproj",
+      "projectPath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\OracleTestRelObj\\OracleTestRelObj.csproj",
       "packagesPath": "C:\\Users\\lolvl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lolvl\\source\\repos\\OracleTestRelObj\\OracleTestRelObj\\obj\\",
+      "outputPath": "C:\\Users\\lolvl\\OneDrive\\Desktop\\Projekt_Technologie_obiektowe\\baza_danych_oracle\\Program_test_rel-obj_baza\\OracleTestRelObj\\OracleTestRelObj\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

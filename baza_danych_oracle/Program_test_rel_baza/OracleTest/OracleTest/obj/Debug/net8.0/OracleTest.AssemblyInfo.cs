@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OracleTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c61016e5506b16a1cf40990aebddbcd547a17e68")]
 [assembly: System.Reflection.AssemblyProductAttribute("OracleTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OracleTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

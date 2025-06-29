@@ -20,8 +20,8 @@ namespace OracleObiektowo
                     Console.WriteLine("\nWybierz operację:");
                     Console.WriteLine("1 - Dodaj 1000 uczniów");
                     Console.WriteLine("2 - Aktualizuj 1000 uczniów");
-                    Console.WriteLine("3 - Usuń 1000 uczniów");
-                    Console.WriteLine("4 - Wczytaj 1000 uczniów");
+                    Console.WriteLine("3 - Wczytaj 1000 uczniów"); 
+                    Console.WriteLine("4 - Usuń 1000 uczniów");
                     Console.WriteLine("0 - Wyjście");
                     Console.Write("Twój wybór: ");
                     string wybor = Console.ReadLine();
@@ -31,20 +31,26 @@ namespace OracleObiektowo
                         switch (wybor)
                         {
                             case "1":
+                                Console.WriteLine("Dodawanie 1000 uczniów...");
                                 var czasDodaj = MeasureTime(() => InsertUczniowie(connection, 1000));
-                                Console.WriteLine($"Polecenie wykonane: Dodano 1000 uczniów w {czasDodaj} ms.");
+                                ZapiszWynik("dodaj", czasDodaj);
+
                                 break;
                             case "2":
+                                Console.WriteLine("Aktualizacja 1000 uczniów...");
                                 var czasAkt = MeasureTime(() => UpdateUczniowie(connection, 1000));
-                                Console.WriteLine($"Polecenie wykonane: Zaktualizowano 1000 uczniów w {czasAkt} ms.");
+                                ZapiszWynik("aktualizuj", czasAkt);
+
                                 break;
                             case "3":
-                                var czasDel = MeasureTime(() => DeleteUczniowie(connection, 1000));
-                                Console.WriteLine($"Polecenie wykonane: Usunięto 1000 uczniów w {czasDel} ms.");
+                                Console.WriteLine("Wczytywanie 1000 uczniów...");
+                                var czasSel = MeasureTime(() => SelectUczniowie(connection, 1000));
+                                ZapiszWynik("wczytaj", czasSel);
                                 break;
                             case "4":
-                                var czasSel = MeasureTime(() => SelectUczniowie(connection, 1000));
-                                Console.WriteLine($"Polecenie wykonane: Wczytano uczniów w {czasSel} ms.");
+                                Console.WriteLine("Usuwanie 1000 uczniów...");
+                                var czasDel = MeasureTime(() => DeleteUczniowie(connection, 1000));
+                                ZapiszWynik("usun", czasDel);
                                 break;
                             case "0":
                                 Console.WriteLine("Zakończono.");
@@ -207,6 +213,13 @@ namespace OracleObiektowo
             {
                 Console.WriteLine($"Błąd przy wczytywaniu uczniów: {ex.Message} (Kod: {ex.Number})");
             }
+        }
+        static void ZapiszWynik(string operacja, long czas)
+        {
+            string linia = $"baza_obiektowa;{operacja};{czas}";
+            File.AppendAllLines("Wyniki_obiektowa.txt", new[] { linia });
+            Console.WriteLine($"Operacja {operacja} zakończona w {czas} ms");
+
         }
     }
 }
