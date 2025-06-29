@@ -21,7 +21,6 @@ INSERT INTO C##RELSZKOLA.PRZEDMIOTY (PRZEDMIOT_ID, NAZWA) VALUES (8, 'Geografia'
 INSERT INTO C##RELSZKOLA.PRZEDMIOTY (PRZEDMIOT_ID, NAZWA) VALUES (9, 'Wychowanie Fizyczne');
 INSERT INTO C##RELSZKOLA.PRZEDMIOTY (PRZEDMIOT_ID, NAZWA) VALUES (10, 'Język Angielski');
 
--- 1. adresy
 INSERT INTO C##RELSZKOLA.adresy VALUES (1, 'Szkolna 2', 'Warszawa', '00-002');
 INSERT INTO C##RELSZKOLA.adresy VALUES (2, 'Matematyczna 5', 'Kraków', '30-010');
 INSERT INTO C##RELSZKOLA.adresy VALUES (3, 'Informatyczna 9', 'Poznań', '60-020');
@@ -43,16 +42,16 @@ INSERT INTO C##RELSZKOLA.adresy VALUES (18,'Parkowa 15', 'Lublin', '20-008');
 INSERT INTO C##RELSZKOLA.adresy VALUES (19, 'Słoneczna 18', 'Katowice', '40-009');
 INSERT INTO C##RELSZKOLA.adresy VALUES (20, 'Kwiatowa 20', 'Bydgoszcz', '85-010');
 
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (1, 'Marcelina', 'Gajos', '12345678901', 1, 'Język Polski');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (2, 'Zbigniew', 'Krzos', '12345678902', 2, 'Matematyka');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (3, 'Dawid', 'Stal', '12345678903', 3, 'Informatyka');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (4, 'Anna', 'Kowalska', '12345678904', 4, 'Fizyka');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (5, 'Jan', 'Nowak', '12345678905', 5, 'Chemia');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (6, 'Katarzyna', 'Wiśniewska', '12345678906', 6, 'Biologia');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (7, 'Piotr', 'Zieliński', '12345678907', 7, 'Historia');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (8, 'Maria', 'Dąbrowska', '12345678908', 8, 'Geografia');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (9, 'Tomasz', 'Lewandowski', '12345678909', 9, 'Wychowanie Fizyczne');
-INSERT INTO C##RELSZKOLA.nauczyciele VALUES (10, 'Ewa', 'Szymańska', '12345678910', 10, 'Język Angielski');
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (1, 'Marcelina', 'Gajos', '12345678901', 1, 1);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (2, 'Zbigniew', 'Krzos', '12345678902', 2, 2);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (3, 'Dawid', 'Stal', '12345678903', 3, 3);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (4, 'Anna', 'Kowalska', '12345678904', 4, 4);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (5, 'Jan', 'Nowak', '12345678905', 5, 5);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (6, 'Katarzyna', 'Wiśniewska', '12345678906', 6, 6);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (7, 'Piotr', 'Zieliński', '12345678907', 7, 7);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (8, 'Maria', 'Dąbrowska', '12345678908', 8, 8);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (9, 'Tomasz', 'Lewandowski', '12345678909', 9, 9);
+INSERT INTO C##RELSZKOLA.nauczyciele VALUES (10, 'Ewa', 'Szymańska', '12345678910', 10, 10);
 
 INSERT INTO C##RELSZKOLA.uczniowie VALUES (1, 'Sylwester', 'Lenarczyk', '98765432101', 11, 1);
 INSERT INTO C##RELSZKOLA.uczniowie VALUES (2, 'Franciszek', 'Teodorczyk', '98765432102', 12, 2);
@@ -82,16 +81,16 @@ INSERT INTO C##RELSZKOLA.oceny (ocena_id, uczen_id, przedmiot_id, ocena, data_ws
 INSERT INTO C##RELSZKOLA.oceny (ocena_id, uczen_id, przedmiot_id, ocena, data_wstawienia) VALUES (9, 9, 1, 6, SYSDATE);
 INSERT INTO C##RELSZKOLA.oceny (ocena_id, uczen_id, przedmiot_id, ocena, data_wstawienia) VALUES (10, 10, 1, 5, SYSDATE);
 
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (1 , 1);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (2 , 2);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (3 , 3);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (4 , 4);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (5 , 5);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (6 , 6);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (7 , 7);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (8 , 8);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (9 , 9);
-INSERT INTO C##RELSZKOLA.wychowawcy (uczen_id, nauczyciel_id) VALUES (10,10);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (1 , 1);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (2 , 2);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (3 , 3);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (4 , 4);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (5 , 5);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (6 , 6);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (7 , 7);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (8 , 8);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (9 , 9);
+INSERT INTO C##RELSZKOLA.wychowawcy (KLASA_ID, nauczyciel_id) VALUES (10,10);
 
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (1, 1, 2, 2, 1, '09:00', '09:45');
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (2, 1, 1, 1, 1, '10:00', '10:45');
@@ -101,6 +100,8 @@ INSERT INTO C##RELSZKOLA.plan_zajec VALUES (5, 4, 5, 5, 4, '10:00', '10:45');
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (6, 5, 6, 6, 5, '11:00', '11:45');
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (7, 6, 7, 7, 1, '12:00', '12:45');
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (8, 7, 8, 8, 2, '13:00', '13:45');
-INSERT INTO C##RELSZKOLA.plan_zajec VALUES (9, 8, 9, 9, 3, '08:00', '08:45');
+INSERT INTO C##RELSZKOLA.plan_zajec VALUES (9, 8, 9, 9, 3, '08:00', 
+'08:45');
 INSERT INTO C##RELSZKOLA.plan_zajec VALUES (10, 9, 10, 10, 4, '09:00', '09:45');
+
 
